@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario de Citas Médicas</title>
+    </head>
+    <body>
+        <p>
+            FORMULARIO PARA AGENDAR CITA MÉDICA
+        </p>
+
+        <form action="proceso_cita.php" method="post">
+            <label for="nombre">Nombre del Paciente:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <br><br>
+
+            <label for="fecha">Fecha de la Cita:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <br><br>
+
+            <label for="hora">Hora de la Cita:</label>
+            <input type="time" id="hora" name="hora" required>
+            <br><br>
+
+            <label for="especialidad">Especialidad:</label>
+            <select id="especialidad" name="especialidad">
+                <option value="cardiologia">Cardiología</option>
+                <option value="pediatria">Pediatría</option>
+                <option value="dermatologia">Dermatología</option>
+                <option value="medicina_general">Medicina General</option>
+            </select>
+            <br><br>
+
+            <input type="submit" value="Agendar Cita">
+        </form>
+    </body>
+</html>
