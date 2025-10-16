@@ -1,0 +1,14 @@
+.fondo {
+    color: white;
+    background-image: url(../html/images/foto_plaza.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: blueviolet;
+    opacity: 0.8   ;
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
+
+
+}
