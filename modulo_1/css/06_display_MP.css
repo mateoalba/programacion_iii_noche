@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; 
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2e8b57; 
+    margin-bottom: 40px;
+}
+
+.estatico {
+    position: static; 
+    background-color: #add8e6; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.relativo {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: #90ee90; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.fijo {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #ff7f50; 
+    padding: 20px;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}

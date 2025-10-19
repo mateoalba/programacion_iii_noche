@@ -1,0 +1,14 @@
+body {
+    background-color: #f4f9f4;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 2px solid #1a8e5f;
+    padding-bottom: 10px;
+}
+
+a:hover {
+    color: #1a8e5f;
+    text-decoration: underline;
+}

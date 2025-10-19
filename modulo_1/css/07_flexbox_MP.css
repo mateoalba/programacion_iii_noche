@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; 
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2e8b57; 
+    margin-bottom: 40px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: #add8e6; 
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    flex: 1 1 150px; 
+}
+
+.item.especial {
+    background-color: #ff7f50; 
+    color: white;
+    font-weight: bold;
+    flex: 2 1 200px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Citas Médicas</title>
+</head>
+<body>
+    <h2>Formulario para Agendar Cita Médica</h2>
+
+    <form action="procesar_cita.php" method="post">
+        <fieldset>
+            <legend>Registro de Cita</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombre">Nombre del Paciente:</label><br>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
+                    </td>
+                    <td>
+                        <label for="email">Correo Electrónico:</label><br>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="telefono">Teléfono:</label><br>
+                        <input type="tel" id="telefono" name="telefono" placeholder="0999999999" required>
+                    </td>
+                    <td>
+                        <label for="fecha">Fecha de la Cita:</label><br>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="especialidad">Especialidad Médica:</label><br>
+                        <select id="especialidad" name="especialidad" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="medicina_general">Medicina General</option>
+                            <option value="pediatria">Pediatría</option>
+                            <option value="odontologia">Odontología</option>
+                            <option value="cardiologia">Cardiología</option>
+                            <option value="ginecologia">Ginecología</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="doctor">Médico Asignado:</label><br>
+                        <input type="text" id="doctor" name="doctor" placeholder="Nombre del doctor">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="genero">Género:</label><br>
+                        <input type="radio" id="masculino" name="genero" value="M">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="femenino" name="genero" value="F">
+                        <label for="femenino">Femenino</label>
+                    </td>
+                    <td>
+                        <label for="motivo">Motivo de la Cita:</label><br>
+                        <textarea id="motivo" name="motivo" rows="4" cols="25" placeholder="Describa brevemente el motivo de su consulta..."></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="acepto" name="acepto" required>
+                        <label for="acepto">Confirmo que la información proporcionada es correcta</label>
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+            <input type="submit" value="Agendar Cita">
+            <input type="reset" value="Limpiar Formulario">
+        </fieldset>
+    </form>
+</body>
+</html>

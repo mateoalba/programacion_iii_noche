@@ -1,24 +1,29 @@
-[9:05 p. m., 15/10/2025] Heymi 💜: h1 {
-    color: rgb(110, 32, 110);  
+
+h1 {
+    color: rgb(180, 32, 110);
 }
+
+
 .tipo_clase {
     color: orange;
 }
-[9:13 p. m., 15/10/2025] Heymi 💜: h1 {
-    color: rgb(180, 32, 110);  
-}
-.tipo_clase {
-    color: orange;
-}
+
+
 #tipo_id {
     color: blue;
 }
+
+
 * {
     margin: 0;
 }
+
+
 div p {
     color: rgb(106, 211, 20);
 }
-ul>li {
+
+
+ul > li {
     color: brown;
 }

@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #2e8b57;
+    margin-bottom: 40px;
+}
+
+.caja {
+    background-color: #ff7f50; 
+    color: white;
+    padding: 30px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: inline-block;
+    animation: parpadeo 1.5s infinite alternate;
+}
+
+/* Animación de parpadeo */
+@keyframes parpadeo {
+    0% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(-10px); opacity: 0.8; }
+    100% { transform: translateY(0); opacity: 1; }
+}
