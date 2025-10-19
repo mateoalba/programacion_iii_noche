@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto - Centro Médico Alba</title>
+</head>
+<body>
+
+<header>
+    <h1>Contacto</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+    </ul>
+</nav>
+
+<main>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono"><br><br>
+            
+            <label for="fecha">Fecha de la cita:</label><br>
+            <input type="date" id="fecha" name="fecha"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+            
+            <label for="especialidad">Especialidad:</label>
+            <select id="especialidad" name="especialidad">
+                <option value="general">General</option>
+                <option value="pediatria">Pediatría</option>
+                <option value="odontologia">Odontología</option>
+            </select><br><br>
+            
+            <label><input type="checkbox" name="notificaciones"> Recibir notificaciones</label><br>
+            <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+            <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Imágenes agregadas -->
+    <section>
+        <h2>Nuestras Instalaciones</h2>
+
+        <figure>
+            <img src="../images/citas_medicas.jpg" alt="Sala de espera Centro Médico Alba" width="400">
+            <figcaption>Sala de espera moderna y cómoda</figcaption>
+        </figure>
+
+        <figure>
+            <img src="../images/consultorio_MP.jpg" alt="Consultorio Centro Médico Alba" width="400">
+            <figcaption>Consultorio equipado para consultas generales</figcaption>
+        </figure>
+
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Centro Médico Alba</p>
+</footer>
+
+</body>
+</html>
