@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Centro Médico Alba</title>
+</head>
+
+<body>
+    <header>
+        <h1>Centro Médico Alba</h1>
+        <p>Tu salud, nuestra prioridad</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#citas">Agendar Cita</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio">
+        <section id="servicios">
+            <h2>Servicios Médicos</h2>
+            <p>
+                En el Centro Médico <strong>Vida Sana</strong> contamos con un equipo de profesionales altamente calificados 
+                y tecnología moderna para ofrecerte una atención integral. Nuestros servicios incluyen:
+            </p>
+            <ul>
+                <li>Medicina General</li>
+                <li>Pediatría</li>
+                <li>Ginecología</li>
+                <li>Cardiología</li>
+                <li>Odontología</li>
+                <li>Laboratorio Clínico</li>
+            </ul>
+        </section>
+
+        <article id="citas">
+            <h2>Agendar tu Cita Médica</h2>
+            <p>
+                Agenda tu cita de forma rápida y sencilla llenando el formulario a continuación. Nuestro personal se pondrá
+                en contacto contigo para confirmar tu atención.
+            </p>
+
+            <form action="procesar_cita.php" method="post">
+                <fieldset>
+                    <legend>Registro de Cita Médica</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="nombre">Nombre del Paciente:</label><br>
+                                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
+                            </td>
+                            <td>
+                                <label for="email">Correo Electrónico:</label><br>
+                                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="telefono">Teléfono:</label><br>
+                                <input type="tel" id="telefono" name="telefono" placeholder="0999999999" required>
+                            </td>
+                            <td>
+                                <label for="fecha">Fecha de la Cita:</label><br>
+                                <input type="date" id="fecha" name="fecha" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="especialidad">Especialidad:</label><br>
+                                <select id="especialidad" name="especialidad" required>
+                                    <option value="">Seleccione una opción</option>
+                                    <option value="medicina_general">Medicina General</option>
+                                    <option value="pediatria">Pediatría</option>
+                                    <option value="odontologia">Odontología</option>
+                                    <option value="cardiologia">Cardiología</option>
+                                    <option value="ginecologia">Ginecología</option>
+                                </select>
+                            </td>
+                            <td>
+                                <label for="doctor">Médico Asignado:</label><br>
+                                <input type="text" id="doctor" name="doctor" placeholder="Nombre del doctor">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="genero">Género:</label><br>
+                                <input type="radio" id="masculino" name="genero" value="M">
+                                <label for="masculino">Masculino</label>
+                                <input type="radio" id="femenino" name="genero" value="F">
+                                <label for="femenino">Femenino</label>
+                            </td>
+                            <td>
+                                <label for="motivo">Motivo de la Cita:</label><br>
+                                <textarea id="motivo" name="motivo" rows="4" cols="25" placeholder="Describa brevemente el motivo de su consulta..."></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" id="acepto" name="acepto" required>
+                                <label for="acepto">Confirmo que la información proporcionada es correcta</label>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+                    <input type="submit" value="Agendar Cita">
+                    <input type="reset" value="Limpiar Formulario">
+                </fieldset>
+            </form>
+        </article>
+
+        <aside>
+            <h3>Consejos de Salud</h3>
+            <p>
+                🩺 Mantén tus chequeos médicos al día.<br>
+                💧 Bebe al menos 2 litros de agua diarios.<br>
+                🍎 Lleva una dieta equilibrada y evita el exceso de azúcar.<br>
+                💤 Duerme mínimo 7 horas cada noche.<br>
+                🚶‍♀️ Realiza actividad física al menos 30 minutos al día.
+            </p>
+        </aside>
+
+        <section id="grid">
+            <h2>Horarios de Atención</h2>
+            <p>
+                Lunes a Viernes: 08h00 - 18h00<br>
+                Sábados: 09h00 - 13h00<br>
+                Domingos y feriados: Atención de emergencias.
+            </p>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <h3>Contacto</h3>
+        <p>
+            📍 Dirección: Av. Salud y Vida N34-451, Quito, Ecuador<br>
+            ☎️ Teléfono: +593 2 394 8000<br>
+            ✉️ Correo: contacto@vidasana.ec
+        </p>
+    </footer>
+</body>
+</html>
