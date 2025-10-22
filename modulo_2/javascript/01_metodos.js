@@ -1,0 +1,1 @@
+console.log("Hola mundo con java script en archivo externo");
