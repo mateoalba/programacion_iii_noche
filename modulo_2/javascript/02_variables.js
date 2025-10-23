@@ -1,7 +1,7 @@
 console.log("VARIABLES EN JAVASCRIPT");
 var saludo1="Hola mundo con variables en Java Script";
 var saludo2="Hola mundo modificado";
-console.log(saludo);
+console.log(saludo1);
 
 console.log(saludo1+ ""+ saludo2);
 console.log(`$(saludo1) $(saludo2) $(4+5)`);
@@ -34,5 +34,5 @@ const persona = {
 
 console.log("OBJETOS EN JAVASCRIPT", typeof(persona));
 console.log(persona);
-console.log(persona, edad);
-console.log(persona, nombre);
+console.log(persona.edad);
+console.log(persona.nombre);
