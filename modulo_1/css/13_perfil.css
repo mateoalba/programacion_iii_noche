@@ -1,0 +1,28 @@
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+
+    width: 250px;
+    text-align: center;
+    background-color: lightblue;
+
+    padding: 20px;
+    border-radius: 12px;
+
+}
+.perfil {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 60px;
+    margin-bottom: 15px;
+}
+
+.div {
+    margin: 5px 0;
+
+}
