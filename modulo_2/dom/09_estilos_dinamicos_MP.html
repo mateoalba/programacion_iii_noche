@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Citas Médicas</title>
+  <style>
+    #cuadro {
+      width: 100px;
+      height: 100px;
+      background-color: #58a6ff;
+      border-radius: 10px;
+      transition: all 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Gestión de Citas Médicas</h1>
+
+  <p>Simulador visual del estado de una cita:</p>
+
+  <div id="cuadro"></div>
+
+  <div style="margin-top:20px;">
+    <button onclick="cambiarEstado()">🩺 Cambiar Estado</button>
+    <button onclick="aumentarPrioridad()">⬆️ Aumentar Prioridad</button>
+    <button onclick="reiniciarCita()">🔄 Reiniciar Cita</button>
+  </div>
+
+  <script src="09_estilos_dinamicos_MP.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <script src="01_hello_dom_MP.js" defer></script>
+    <title>Gestión de Citas Médicas</title>
+</head>
+<body>
+    <h1>Sistema de Citas Médicas</h1>
+    <p>Abre la consola del navegador para ver la información del DOM relacionada con citas médicas.</p>
+
+    <!-- Elementos para demostrar acceso al DOM -->
+    <h2 id="tituloFormulario">Formulario de Registro</h2>
+
+    <form id="formCita">
+        <label>Médico:</label>
+        <select id="medico">
+            <option value="Pediatría">Pediatría</option>
+            <option value="Odontología">Odontología</option>
+            <option value="Medicina General">Medicina General</option>
+        </select>
+
+        <br><br>
+
+        <label>Fecha:</label>
+        <input type="date" id="fecha">
+
+        <br><br>
+
+        <label>Hora:</label>
+        <input type="time" id="hora">
+    </form>
+</body>
+</html>
